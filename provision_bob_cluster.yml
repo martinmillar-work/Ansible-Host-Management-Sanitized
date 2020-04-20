@@ -1,0 +1,13 @@
+---
+- name: Setup new hosts
+  hosts: all
+  user: "{{ server_service_account }}"
+  #gather_facts: no
+  roles:
+    - setup_ctsn # galaxy
+    - yum
+    - time
+    - utils
+    - service_account
+    - docker
+    - jenkins

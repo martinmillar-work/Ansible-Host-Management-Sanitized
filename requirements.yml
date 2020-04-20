@@ -1,0 +1,4 @@
+# External roles required to provision an Iceflow VM
+- name: setup_ctsn
+  src: git+ssh://git@bitbucket.cse-cst.gc.ca:7999/opf/ansible_ctsn.git
+  version: master

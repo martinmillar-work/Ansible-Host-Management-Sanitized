@@ -1,0 +1,6 @@
+echo "## Execute Ansible job against BOB PRODUCTION ##"
+#read -p "Continue (yes|no)? " -r
+#echo
+#if [[ $REPLY =~ ^(yes|YES)$ ]]; then
+    ansible-playbook -i inventory/bob/production provision_bob_cluster.yml
+#fi

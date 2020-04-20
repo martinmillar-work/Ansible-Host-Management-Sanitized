@@ -1,0 +1,2 @@
+echo "## Execute Ansible job against MQ STG ##"
+ansible-playbook -i inventory/mq/staging provision_mq_cluster.yml

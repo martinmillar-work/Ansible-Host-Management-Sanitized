@@ -1,0 +1,6 @@
+echo "## Execute Ansible job against MQ PRODUCTION ##"
+read -p "Continue (yes|no)? " -r
+echo
+if [[ $REPLY =~ ^(yes|YES)$ ]]; then
+    ansible-playbook -i inventory/mq/production provision_mq_cluster.yml
+fi
